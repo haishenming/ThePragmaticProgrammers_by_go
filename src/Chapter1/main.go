@@ -6,7 +6,9 @@ import (
 	"os"
 )
 
-func main() {
+func T1() {
+	fmt.Println("计算小费")
+
 	var total float32    // 总金额可能是小数
 	var tip int
 
@@ -24,4 +26,9 @@ func main() {
 	totalTips := float32(total) - tips
 	fmt.Printf("小费金额是：%.2f\n", tips)
 	fmt.Printf("应付金额是：%.2f\n", totalTips)
+}
+
+func main() {
+	T1()
+
 }
