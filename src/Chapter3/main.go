@@ -16,7 +16,7 @@ func T7()  {
 	feetArea, meterArea := Area.Area(length, width)
 
 	fmt.Printf("%d square feet\n", feetArea)
-	fmt.Printf("%.2f square meters", meterArea)
+	fmt.Printf("%.2f square meters\n", meterArea)
 }
 
 func main() {
