@@ -4,6 +4,7 @@ import (
 	"fmt"
 	Area "Chapter3/Area"
 	Pizza "Chapter3/Pizza"
+	Gallons "Chapter3/Gallons"
 )
 func T7()  {
 	var length, width int
@@ -37,8 +38,20 @@ func T8() {
 	fmt.Printf("%d people with %d pizzas.\n", people, pizzas)
 	fmt.Printf("Each people gets %d pieces of pizzas.\n", peoplePieces)
 	fmt.Printf("There are %d leftover pieces.\n", leftover)
-
 }
+
+func T9() {
+	const aGallonsOfSquare = 350
+	var squareNum int
+
+	fmt.Println("Square Number?")
+	fmt.Scanf("%d", &squareNum)
+
+	gallonsNum := Gallons.Gallons(aGallonsOfSquare, squareNum)
+
+	fmt.Printf("You will need to purchase %d gallons of\npaint to cover %d square feet.\n", gallonsNum, squareNum)
+}
+
 
 func main() {
 	var T int
@@ -52,6 +65,9 @@ func main() {
 	case 8:
 		fmt.Println("Start T8")
 		T8()
+	case 9:
+		fmt.Println("Start T9")
+		T9()
 
 	default:
 		fmt.Printf("Not find your T%d\n", T)
